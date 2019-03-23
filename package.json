@@ -8,7 +8,7 @@
     "node",
     "config"
   ],
-  "main": "config.js",
+  "main": "src/config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "version-patch": "npm version patch -m \"version increment to %s\"",
