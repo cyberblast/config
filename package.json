@@ -1,6 +1,6 @@
 {
   "name": "@cyberblast/config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple config file loader for node",
   "author": "cyberblast <git@cyberblast.org>",
   "license": "MIT",
