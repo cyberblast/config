@@ -3,7 +3,7 @@ module.exports = mod;
 
 const fs = require("fs");
 
-async function loadFileAsync(filePath){
+async function readFileAsync(filePath){
   return new Promise((resolve, reject) => {
     fs.readFile(filePath, function (fsError, data) {
       if (fsError) {
@@ -20,7 +20,7 @@ mod.load = async function(filePath, forceReload = false){
     delete mod.settings;
   }
   if(mod.settings === undefined){
-    mod.settings = await loadFileAsync(filePath);
+    mod.settings = await readFileAsync(filePath);
   }
   return mod.settings;
 }
