@@ -31,5 +31,7 @@ config.load('./yourFile.json')
 ```
 ## Options
 
-You can also specify a second argument `forceReload` for `config.load`, which is false by default.  
+You can also specify a second argument `forceReload` for `config.load`, which is `false` by default.  
 When set to `true`, a subsequent call of config.load will reload the file from file system. Otherwise it will use present "cached" values.
+
+You can also access once loaded settings via `config.settings`.
