@@ -29,9 +29,14 @@ config.load('./yourFile.json')
     console.log(settings.greet);
   });
 ```
+
 ## Options
 
 You can also specify a second argument `forceReload` for `config.load`, which is `false` by default.  
 When set to `true`, a subsequent call of config.load will reload the file from file system. Otherwise it will use present "cached" values.
 
 You can also access once loaded settings via `config.settings`.
+
+## Legal
+
+Please take note of files [LICENSE](https://raw.githubusercontent.com/cyberblast/config/master/LICENSE) and [CONTRIBUTING](https://raw.githubusercontent.com/cyberblast/config/master/CONTRIBUTING).
