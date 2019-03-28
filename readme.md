@@ -30,6 +30,13 @@ config.load('./yourFile.json')
   });
 ```
 
+Imaginary config file `./yourFile.json` used in that sample:
+```json
+{
+  "greet": "Hello World"
+}
+```
+
 ## Options
 
 You can also specify a second argument `forceReload` for `config.load`, which is `false` by default.  
