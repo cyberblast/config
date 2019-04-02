@@ -1,16 +1,10 @@
 const config = require('../src/config.js');
+const configFile = './test/config.json';
 
-function onError(e){
-  throw e;
-}
-function onSuccess(settings){
+async function run(){
+  const settings = await config.load(configFile, true);
   console.info('file loaded');
-  if(settings.some !== 'thing') onError('Settings content not loaded correctly!');
+  if(settings.some !== 'thing') throw 'Settings content not loaded!';
   console.info('content ok');
 }
-
-config.load(
-  onError,
-  onSuccess,
-  './test/config.json',
-  true);
+run();

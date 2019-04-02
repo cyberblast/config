@@ -1,12 +1,14 @@
 {
   "name": "@cyberblast/config",
-  "version": "0.0.2",
-  "description": "A simple config file loader for node",
+  "version": "0.0.4",
+  "description": "A simple json config file loader for node",
   "author": "cyberblast <git@cyberblast.org>",
   "license": "MIT",
   "keywords": [
     "node",
-    "config"
+    "config",
+    "file",
+    "json"
   ],
   "main": "src/config.js",
   "scripts": {
