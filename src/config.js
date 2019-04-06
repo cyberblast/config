@@ -1,6 +1,3 @@
-let mod = {};
-module.exports = mod;
-
 const fs = require("fs");
 
 async function readFileAsync(filePath){
@@ -15,12 +12,12 @@ async function readFileAsync(filePath){
   });
 };
 
-mod.load = async function(filePath, forceReload = false){
-  if(forceReload && mod.settings !== undefined){
-    delete mod.settings;
+module.exports = function(filePath){
+  this.load = async function(){
+    if(this.settings !== undefined){
+      delete this.settings;
+    }
+    this.settings = await readFileAsync(filePath);
+    return this.settings;
   }
-  if(mod.settings === undefined){
-    mod.settings = await readFileAsync(filePath);
-  }
-  return mod.settings;
-}
+};
