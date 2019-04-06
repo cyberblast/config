@@ -14,8 +14,10 @@ const Config = require('@cyberblast/config');
 async function run(){
   const config = new Config('./yourFile.json');
   const settings = await config.load();
-  // do something with your settings object
+  // do something with settings object
   console.log(settings.greet);
+  // or like that
+  console.log(config.settings.greet);
 }
 run();
 ```
@@ -26,8 +28,10 @@ const Config = require('@cyberblast/config');
 
 const config = new Config('./yourFile.json');
 config.load().then(settings => {
-  // do something with your settings object
+  // do something with settings object
   console.log(settings.greet);
+  // or like that
+  console.log(config.settings.greet);
 });
 ```
 
@@ -37,13 +41,6 @@ Imaginary config file `./yourFile.json` used in that sample:
   "greet": "Hello World"
 }
 ```
-
-## Options
-
-You can also specify a second argument `forceReload` for `config.load`, which is `false` by default.  
-When set to `true`, a subsequent call of config.load will reload the file from file system. Otherwise it will use present "cached" values.
-
-You can also access once loaded settings via `config.settings`.
 
 ## Legal
 
