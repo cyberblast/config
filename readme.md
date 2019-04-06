@@ -9,10 +9,11 @@ A simple config file loader for node
 
 using async
 ```js
-const config = require('@cyberblast/config');
+const Config = require('@cyberblast/config');
 
 async function run(){
-  const settings = await config.load('./yourFile.json');
+  const config = new Config('./yourFile.json');
+  const settings = await config.load();
   // do something with your settings object
   console.log(settings.greet);
 }
@@ -21,13 +22,13 @@ run();
 
 without async
 ```js
-const config = require('@cyberblast/config');
+const Config = require('@cyberblast/config');
 
-config.load('./yourFile.json')
-  .then(settings => {
-    // do something with your settings object
-    console.log(settings.greet);
-  });
+const config = new Config('./yourFile.json');
+config.load().then(settings => {
+  // do something with your settings object
+  console.log(settings.greet);
+});
 ```
 
 Imaginary config file `./yourFile.json` used in that sample:
