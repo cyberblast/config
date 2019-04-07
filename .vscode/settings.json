@@ -12,5 +12,6 @@
   "css.lint.compatibleVendorPrefixes": "warning",
   "css.lint.duplicateProperties": "warning",
   "css.lint.zeroUnits": "warning",
-  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "files.eol": "\r\n"
 }

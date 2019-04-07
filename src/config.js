@@ -12,7 +12,15 @@ async function readFileAsync(filePath) {
   });
 };
 
+/**
+ * Class Config for loading a single json config file
+ * @param {string} filePath - Path of json file to load
+ */
 function Config(filePath) {
+  /**
+   * Load Config file
+   * @return { Promise<any> } Promise containing loaded settings
+   */
   this.load = async function() {
     if (this.settings !== undefined) {
       delete this.settings;
