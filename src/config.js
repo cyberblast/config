@@ -1,8 +1,8 @@
 const fs = require("fs");
 
-async function readFileAsync(filePath){
+async function readFileAsync(filePath) {
   return new Promise((resolve, reject) => {
-    fs.readFile(filePath, function (fsError, data) {
+    fs.readFile(filePath, function(fsError, data) {
       if (fsError) {
         reject(fsError);
         return;
@@ -12,12 +12,14 @@ async function readFileAsync(filePath){
   });
 };
 
-module.exports = function(filePath){
-  this.load = async function(){
-    if(this.settings !== undefined){
+function Config(filePath) {
+  this.load = async function() {
+    if (this.settings !== undefined) {
       delete this.settings;
     }
     this.settings = await readFileAsync(filePath);
     return this.settings;
   }
 };
+
+module.exports = Config;
