@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": true,
+    "strict": false,
     "outDir": "dist",
     "module": "system",
-    "target": "esnext",
     "allowJs": true,
     "checkJs": true,
     "typeRoots": [
-      "node_modules/@types",
-      "types"
+      "./types/",
+      "./node_modules/@types"
     ],
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -19,8 +23,7 @@
     ]
   },
   "include": [
-    "types/*",
-    "src/*"
+    "./src/**/*.js"
   ],
   "exclude": [
     "node_modules"

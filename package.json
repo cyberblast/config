@@ -10,7 +10,7 @@
     "file",
     "json"
   ],
-  "main": "./dist/config.js",
+  "main": "./src/config.js",
   "types": "./types/config.d.ts",
   "scripts": {
     "build": "tsc",
