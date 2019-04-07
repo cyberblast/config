@@ -10,17 +10,9 @@ async function readFileAsync(filePath) {
       resolve(JSON.parse(data.toString()));
     });
   });
-};
+}
 
-/**
- * Class Config for loading a single json config file
- * @param {string} filePath - Path of json file to load
- */
 function Config(filePath) {
-  /**
-   * Load Config file
-   * @return { Promise<any> } Promise containing loaded settings
-   */
   this.load = async function() {
     if (this.settings !== undefined) {
       delete this.settings;
@@ -28,6 +20,6 @@ function Config(filePath) {
     this.settings = await readFileAsync(filePath);
     return this.settings;
   }
-};
+}
 
 module.exports = Config;

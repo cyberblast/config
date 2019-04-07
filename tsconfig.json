@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "system",
+    "target": "esnext",
+    "allowJs": true,
+    "checkJs": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [
+      "es6",
+      "es7",
+      "esnext"
+    ]
+  },
+  "include": [
+    "types/*",
+    "src/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
