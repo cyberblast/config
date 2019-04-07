@@ -10,7 +10,8 @@
     "file",
     "json"
   ],
-  "main": "src/config.js",
+  "main": "./src/config.js",
+  "types": "./types/config.d.ts",
   "scripts": {
     "test": "node ./test/run.js",
     "version-patch": "npm version patch -m \"version increment to %s\"",
