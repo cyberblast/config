@@ -3,7 +3,7 @@ const fs = require("fs");
 /**
  * Load file
  * @param {string} filePath - Path of json file to load
- * @return { Promise<{ [key: string]: any }> } Promise containing file content, parsed to JSON object
+ * @return { Promise<any> } Promise containing file content, parsed to JSON object
  */
 async function readFileAsync(filePath) {
   return new Promise((resolve, reject) => {
@@ -25,13 +25,13 @@ async function readFileAsync(filePath) {
 function Config(filePath) {
 
   /**
-   * @type { Object.<string, any> }
+   * @type { any }
    */
   this.settings = undefined;
 
   /**
    * Load Config file
-   * @return { Promise<{ [key: string]: any }> } Promise containing loaded settings
+   * @return { Promise<any> } Promise containing loaded settings
    */
   this.load = async function() {
     if (this.settings !== undefined) {

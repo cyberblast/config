@@ -11,7 +11,7 @@
     "json"
   ],
   "main": "./src/config.js",
-  "types": "./types/config.d.ts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "node ./test/run.js",
@@ -33,9 +33,9 @@
   "engines": {
     "node": "*"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^11.13.0"
+  "dependencies": {
+    "@types/node": "^12.12.17"
   },
+  "devDependencies": {},
   "optionalDependencies": {}
 }
