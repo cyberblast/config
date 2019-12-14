@@ -35,7 +35,7 @@ config.load().then(settings => {
 });
 ```
 
-Imaginary config file `./yourFile.json` used in that sample:
+Imaginary config file `./yourFile.json` used in sample above:
 ```json
 {
   "greet": "Hello World"
