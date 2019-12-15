@@ -11,7 +11,6 @@
     "json"
   ],
   "main": "./src/config.js",
-  "types": "./types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "node ./test/run.js",
@@ -35,7 +34,5 @@
   },
   "dependencies": {
     "@types/node": "^12.12.17"
-  },
-  "devDependencies": {},
-  "optionalDependencies": {}
+  }
 }
