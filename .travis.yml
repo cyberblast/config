@@ -3,17 +3,3 @@ node_js:
   - "node"
 git:
   depth: 1
-
-# stages:
-#   - test
-#   - name: deploy
-#     if: branch = master
-# branches:
-#   only:
-#   - master
-# deploy:
-#   provider: npm
-#   email: "YOUR_EMAIL_ADDRESS"
-#   api_key: "YOUR_AUTH_TOKEN"
-#   on:
-#     branch: production
