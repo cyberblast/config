@@ -2,8 +2,8 @@ const fs = require("fs");
 
 /**
  * Load file
- * @param {string} filePath - Path of json file to load
- * @return { Promise<any> } Promise containing file content, parsed to JSON object
+ * @param { string } filePath Path of json file to load
+ * @returns { Promise<Object.<string, any>> } Promise containing file content, parsed to JSON object
  */
 async function readFileAsync(filePath) {
   return new Promise((resolve, reject) => {
@@ -20,18 +20,18 @@ async function readFileAsync(filePath) {
 /**
  * Class Config for loading a single json config file
  * @constructor
- * @param {string} filePath - Path of json file to load
+ * @param { string } filePath Path of json file to load
  */
 function Config(filePath) {
 
   /**
-   * @type { any }
+   * @type { Object.<string, any> }
    */
   this.settings = undefined;
 
   /**
    * Load Config file
-   * @return { Promise<any> } Promise containing loaded settings
+   * @returns { Promise<Object.<string, any>> } Promise containing loaded settings
    */
   this.load = async function() {
     if (this.settings !== undefined) {
