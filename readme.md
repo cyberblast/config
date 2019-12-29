@@ -4,6 +4,7 @@ A simple config file loader for node
 
 [![Build Status](https://travis-ci.org/cyberblast/config.svg?branch=dev)](https://travis-ci.org/cyberblast/config)
 [![npm version](https://badge.fury.io/js/%40cyberblast%2Fconfig.svg)](https://badge.fury.io/js/%40cyberblast%2Fconfig)
+[![TypeScript definitions on DefinitelyTyped](https://definitelytyped.org/badges/standard-flat.svg)](https://www.npmjs.com/package/@types/cyberblast__config)
 
 ## Usage
 
