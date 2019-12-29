@@ -12,7 +12,6 @@
   ],
   "main": "./src/config.js",
   "scripts": {
-    "build": "tsc",
     "test": "node ./test/run.js",
     "version-patch": "npm version patch -m \"version increment to %s\"",
     "postversion": "git push && git push --tags",
