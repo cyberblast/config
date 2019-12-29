@@ -31,7 +31,5 @@
   "engines": {
     "node": "*"
   },
-  "dependencies": {
-    "@types/node": "^12.12.17"
-  }
+  "dependencies": {}
 }
